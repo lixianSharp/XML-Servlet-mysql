@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contactList>
+	<contact id="001"><!--id才是叫属性 属性是在标签内的-->
+		<name>张三</name><!--这个name不叫属性，叫标签-->
+		<age>20</age><!--文本(Text)是在标签体内的 例如：张三、20、...都是文本 -->
+		<phone>134222223333</phone>
+		<email>zhangsan@qq.com</email>
+		<qq>432221111</qq>
+	</contact>
+	<contact id="002">
+		<name>李四</name>
+		<age>20</age>
+		<phone>134222225555</phone>
+		<email>lisi@qq.com</email>
+		<qq>432222222</qq>
+	</contact>
+</contactList>

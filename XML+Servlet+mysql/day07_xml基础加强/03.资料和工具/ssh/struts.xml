@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+ 	<!-- struts2.x集成Spring,可以任意从Spring的上下文(BeanFactory)里去取Bean -->
+	<constant name="struts.objectFactory" value="spring"/>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <!-- 是否启动struts的debug模式 -->
+    <constant name="struts.devMode" value="true" />
+    <!-- 引入国际化资源文件 -->
+    <constant name="struts.custom.i18n.resources" value="messages"></constant>
+	
+	<!-- 通用配置 -->
+	<!-- 默认继承struts-default,如果要加入返回JSON格式的数据，
+	则改为继承json-default(注意：json-default继承自struts-default，因为具有struts-default的所有功能) 
+	-->
+	<package name="common" namespace="/" extends="json-default">
+		<action name="*!*" class="{1}Action" method="{2}">
+			<!-- 通用视图 -->
+			<result name="success">/WEB-INF/jsp/success.jsp</result>
+			<result name="error">/WEB-INF/jsp/error.jsp</result>
+			
+			<!-- 用户模块视图 -->
+			<result name="index">/WEB-INF/jsp/index.jsp</result>
+			<result name="login">/WEB-INF/jsp/login.jsp</result>
+			<result name="toSearchUser">/WEB-INF/jsp/searchUser.jsp</result>
+			<result name="userList" type="json">
+				
+			</result>
+		</action>
+	</package>
+	
+
+</struts>

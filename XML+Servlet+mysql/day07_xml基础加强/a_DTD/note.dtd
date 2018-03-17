@@ -1,0 +1,8 @@
+﻿  <!ELEMENT note (from,to+,heading,sex,body+)>
+  <!ELEMENT to      EMPTY>
+  <!ELEMENT from    ANY>
+  <!ELEMENT heading (#PCDATA)>
+  <!ELEMENT body    (#PCDATA)>
+  <!ATTLIST to id ID #REQUIRED>
+  
+  

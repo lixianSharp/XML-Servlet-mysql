@@ -1,0 +1,28 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+	
+<hibernate-configuration>
+	<session-factory>
+		<!-- JDBC-MySQL连接URL -->
+		<property name="connection.url">jdbc:mysql://localhost:3306/hibernate_db</property>
+		<!-- JDBC-MySQL连接数据库的用户名 -->
+		<property name="connection.username">root</property>
+		<!-- JDBC-MySQL连接数据库的密码 -->
+		<property name="connection.password">123456</property>	
+		<!-- JDBC-MySQL连接数据库的驱动名称 -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!-- 数据库方言 -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- 自动建表配置 -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<!-- 显示Hibernate的调试SQL语句 -->
+		<property name="hibernate.show_sql">true</property>
+		
+		<!-- 加载项目中的映射配置文件 -->
+		<mapping resource="com/toceansoft/pojo/Student.hbm.xml"/>
+		<mapping resource="com/toceansoft/pojo/Product.hbm.xml"/>	
+
+	</session-factory>
+
+</hibernate-configuration>

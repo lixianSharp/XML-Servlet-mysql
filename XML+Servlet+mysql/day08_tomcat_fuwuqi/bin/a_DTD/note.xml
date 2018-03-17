@@ -1,0 +1,45 @@
+﻿<?xml version="1.0"?>
+<!-- DTD的第一种导入方式：直接导入 -->
+<!-- 
+表示对note标签进行约束，note标签下有(to,from,heading,body)这些子标签，
+而且顺序必须要这样出现，而且子标签只出现一次。
+ -->
+<!-- 
+<!DOCTYPE note [
+  <!ELEMENT note (to,from,heading,body)>
+  <!ELEMENT to      (#PCDATA)>
+  <!ELEMENT from    (#PCDATA)>
+  <!ELEMENT heading (#PCDATA)>
+  <!ELEMENT body    (#PCDATA)>
+]>
+<note>
+  <to>Go</to>
+  <from>John</from>
+  <heading>Reminder</heading>
+  <body>Don't forget the meeting!</body>
+</note>
+ -->
+
+
+
+
+
+
+
+
+<!-- 第二种方式，外部导入    
+本地文件导入：<!DOCTYPE 根元素 SYSTEM "文件名">
+公共的外部导入：<!DOCTYPE 根元素 PUBLIC "http://gz.itcast.cn/itcast.dtd">
+ -->
+
+<!DOCTYPE note SYSTEM "note.dtd">
+<note>
+  <from>John<abc></abc></from>
+  <to id="a2"></to>
+  <to id="a1"></to>
+  <heading>Reminder</heading>
+  <sex name="c"></sex>
+  <body>Don't forget the meeting!</body>
+  <body>Don't forget the meeting!</body>
+  <body>Don't forget the meeting!</body>
+</note>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>测试请求方式--这个只是用来测试GET和POST请求方式的区别的</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+  		<h1>GET方式提交</h1>
+  	<!-- get方式提交的时候地址栏会跟上你提交的数据。
+  		例如：http://localhost:8080/day09/testMethod.html?name=lixianyuan&password=1234 -->
+    	<form action="/day09/RequestDemo3" method="GET">
+    		用户名：<input type="text" name="name"/><br/>
+    		密码：<input type="password" name="password"/></br>
+    		<input type="submit" value="提交">
+    	</form>
+    	<hr/>
+    	
+    	<h3>POST方式提交</h3><!-- 参数不会跟着URI后面。参数而是跟在请求的实体内容中。没有？开头,多个参数之间以&分割	 -->
+    	<form action="/day09/RequestDemo2" method="POST" style="height: 18px; ">
+    		用户名：<input type="text" name="name"/><br/>
+    		密码：<input type="password" name="password"/></br>
+    		<input type="submit" value="提交">
+    	</form>
+  </body> 
+</html>

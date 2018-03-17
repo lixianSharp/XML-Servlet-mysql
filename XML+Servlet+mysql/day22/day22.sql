@@ -1,0 +1,7 @@
+CREATE DATABASE day22;
+USE day22;
+
+SHOW TABLES;
+
+
+SELECT* FROM student;

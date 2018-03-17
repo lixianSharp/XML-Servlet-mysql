@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+ 
+ <!-- 修改session的全局有效时间 : 分钟-->
+ <session-config>
+ 	<session-timeout>1</session-timeout>
+ </session-config>
+ 
+ 
+ 
+  <display-name>day11</display-name>
+  <servlet>
+    <servlet-name>PathDemo</servlet-name>
+    <servlet-class>gz.itcast.a_path.PathDemo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ResourceDemo</servlet-name>
+    <servlet-class>gz.itcast.b_resource.ResourceDemo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CookieDemo1</servlet-name>
+    <servlet-class>gz.itcast.c_cookie.CookieDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteCookie</servlet-name>
+    <servlet-class>gz.itcast.c_cookie.DeleteCookie</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HistServlet</servlet-name>
+    <servlet-class>gz.itcast.c_cookie.HistServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SessionDemo1</servlet-name>
+    <servlet-class>gz.itcast.d_session.SessionDemo1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SessionDemo2</servlet-name>
+    <servlet-class>gz.itcast.d_session.SessionDemo2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteSession</servlet-name>
+    <servlet-class>gz.itcast.d_session.DeleteSession</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+	
+
+
+  <servlet-mapping>
+    <servlet-name>PathDemo</servlet-name>
+    <url-pattern>/PathDemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResourceDemo</servlet-name>
+    <url-pattern>/ResourceDemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieDemo1</servlet-name>
+    <url-pattern>/CookieDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteCookie</servlet-name>
+    <url-pattern>/DeleteCookie</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HistServlet</servlet-name>
+    <url-pattern>/HistServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SessionDemo1</servlet-name>
+    <url-pattern>/SessionDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SessionDemo2</servlet-name>
+    <url-pattern>/SessionDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteSession</servlet-name>
+    <url-pattern>/DeleteSession</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+  <welcome-file>target.html</welcome-file>
+    <welcome-file>target.htm</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

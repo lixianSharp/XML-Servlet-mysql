@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>测试一个请求次数</title>
+    <!-- 一个好多同学搞不清楚的问题：
+		一个web页面中，使用img标签引用了三幅图片，
+		当客户端访问服务器中的这个web页面时，
+		客户端总共会访问几次服务器，即向服务器发送了几次HTTP请求。  答案：一共发送了4次。
+		
+	 发送了如下四次请求：第一次是找到该页面，其余三次是分别找该img标签中的三幅图片的资源
+		http://localhost:8080/day09/testImg.html
+		http://localhost:8080/day09/images/1.jpg
+		http://localhost:8080/day09/images/2.jpg
+		http://localhost:8080/day09/images/3.jpg
+     -->
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=utf-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    <img src="images/1.jpg"/> <!--78.2KB  -->
+    <img src="images/2.jpg"/><!--130KB  --><!-- 依然还会发送四次只是有两次被浏览器拦截下来了，在浏览器中只能看到两次，因为使用了浏览器的缓存--> 
+    <img src="images/3.jpg"/><!-- 282KB  -->
+
+  </body>
+</html>

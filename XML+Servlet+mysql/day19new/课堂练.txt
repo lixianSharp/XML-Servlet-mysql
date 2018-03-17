@@ -1,0 +1,5 @@
+利用jdbc的元数据编写以下两个方法
+	1）通用的更新方法(用于执行所有更新相关的操作)
+		update(String sql,Object[] params)
+	2) 通用的查询方法
+		List<T> query(String sql,Object[] params,Class<T> clazz)

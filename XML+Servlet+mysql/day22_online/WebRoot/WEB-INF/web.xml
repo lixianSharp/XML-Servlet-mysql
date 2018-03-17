@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+  <display-name>day22_online</display-name>
+
+	<filter>
+		<filter-name>SecurityFilter</filter-name>
+		<filter-class>gz.itcast.web.SecurityFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>SecurityFilter</filter-name>
+		<url-pattern>/KickOutServlet</url-pattern>
+	</filter-mapping>
+	
+	
+	
+
+	<listener>
+		<listener-class>gz.itcast.web.OnLineListener</listener-class>
+	</listener>
+
+
+
+
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>gz.itcast.web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetOnLineServlet</servlet-name>
+    <servlet-class>gz.itcast.web.GetOnLineServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>gz.itcast.web.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>KickOutServlet</servlet-name>
+    <servlet-class>gz.itcast.web.KickOutServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetOnLineServlet</servlet-name>
+    <url-pattern>/GetOnLineServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>KickOutServlet</servlet-name>
+    <url-pattern>/KickOutServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

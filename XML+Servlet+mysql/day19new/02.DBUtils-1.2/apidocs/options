@@ -1,0 +1,24 @@
+-classpath 'C:/svn/dbutils/clean-trunk/target/checkout/target/classes'
+ -encoding
+'iso-8859-1'
+-protected
+-source
+'1.3'
+-sourcepath
+'C:/svn/dbutils/clean-trunk/target/checkout/src/java'
+-author
+-bottom
+'Copyright &#169; 2002-2009 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.'
+-charset
+'ISO-8859-1'
+-d
+'C:/svn/dbutils/clean-trunk/target/checkout/target/site/apidocs'
+-doctitle
+'Commons DbUtils 1.2 API'
+-link
+'http://java.sun.com/javase/6/docs/api'
+-linksource
+-use
+-version
+-windowtitle
+'Commons DbUtils 1.2 API'

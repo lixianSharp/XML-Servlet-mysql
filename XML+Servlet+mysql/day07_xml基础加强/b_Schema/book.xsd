@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?> 
+
+<!-- 和XML文件一样，一个XML Schema文档也必须有一个根结点，但这个根结点的名称为Schema。
+编写了一个XML Schema约束文档后，通常需要把这个文件中声明的元素绑定到一个ＵＲＩ地址上
+
+ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+					  targetNamespace="http://www.itcast.cn"  <!--URI地址  -->
+					  elementFormDefault="qualified">
+	<xs:element name='书架' >
+		<xs:complexType>
+			<xs:sequence maxOccurs='unbounded' >
+				<xs:element name='书' >
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name='书名' type='xs:string' />
+							<xs:element name='作者' type='xs:string' />
+							<xs:element name='售价' type='xs:integer' />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

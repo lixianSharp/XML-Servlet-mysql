@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<!-- 注册监听器 -->
+	 
+	<!-- <listener>
+		监听器程序全名
+		<listener-class>gz.itcast.b_context.MyContextListener</listener-class>
+	</listener> -->
+	
+	 
+	
+	<!-- <listener>
+		监听器程序全名
+		<listener-class>gz.itcast.c_request.MyRequestListener</listener-class>
+	</listener> -->
+	  
+	  
+	  
+
+	 <listener>
+	 	<!-- 监听器程序全名 -->
+		<listener-class>gz.itcast.d_session.MySessionListener</listener-class>
+	</listener>
+	 
+	
+  <welcome-file-list>
+  	<welcome-file>index.jsp</welcome-file>
+    <welcome-file>context.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

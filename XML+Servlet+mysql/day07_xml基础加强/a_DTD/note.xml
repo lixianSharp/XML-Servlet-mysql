@@ -1,0 +1,45 @@
+﻿<?xml version="1.0"?>
+
+<!-- DTD的第一种导入方式：直接导入 -->
+ <!-- 
+  <!DOCTYPE contact[
+  <!ELEMENT contact (to,from,head,body)>
+  <!ELEMENT to (#PCDATA)>
+  <!ELEMENT from EMPTY>
+  <!ELEMENT head  ANY>
+  <!ELEMENT body (#PCDATA)>
+  ]>
+-->
+<!--
+<contact>
+	<to>lixian</to>
+	<from></from>
+	<head>李贤元</head>
+	<body>lixianyuan</body>
+</contact>
+-->
+
+
+
+
+
+
+
+
+
+
+<!-- 第二种方式，外部导入    本地文件导入：<!DOCTYPE 根元素 SYSTEM "文件名"
+						公共的外部导入：<!DOCTYPE 根元素 PUBLIC "http://gz.itcast.cn/itcast.dtd">
+ -->
+
+<!DOCTYPE note SYSTEM "note.dtd">
+<note>
+  <from>John<abc></abc></from>
+  <to id="a2"></to>
+  <to id="a1"></to>
+  <heading>Reminder</heading>
+  <sex name="c"></sex>
+  <body>Don't forget the meeting!</body>
+  <body>Don't forget the meeting!</body>
+  <body>Don't forget the meeting!</body>
+</note>

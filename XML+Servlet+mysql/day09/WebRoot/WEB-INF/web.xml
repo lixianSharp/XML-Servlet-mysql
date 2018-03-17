@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>day09</display-name>
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>gz.itcast.a_servlet.HelloServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>RequestDemo1</servlet-name>
+    <servlet-class>gz.itcast.b_request.RequestDemo1</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>RequestDemo2</servlet-name>
+    <servlet-class>gz.itcast.b_request.RequestDemo2</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>RequestDemo3</servlet-name>
+    <servlet-class>gz.itcast.b_request.RequestDemo3</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>RequestDemo4</servlet-name>
+    <servlet-class>gz.itcast.b_request.RequestDemo4</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>RequestDemo5</servlet-name>
+    <servlet-class>gz.itcast.b_request.RequestDemo5</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <servlet-name>ResponseDemo1</servlet-name>
+    <servlet-class>gz.itcast.c_response.ResponseDemo1</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ResponseDemo2</servlet-name>
+    <servlet-class>gz.itcast.c_response.ResponseDemo2</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ResponseDemo3</servlet-name>
+    <servlet-class>gz.itcast.c_response.ResponseDemo3</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ResponseDemo4</servlet-name>
+    <servlet-class>gz.itcast.c_response.ResponseDemo4</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestDemo1</servlet-name>
+    <url-pattern>/RequestDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestDemo2</servlet-name>
+    <url-pattern>/RequestDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestDemo3</servlet-name>
+    <url-pattern>/RequestDemo3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestDemo4</servlet-name>
+    <url-pattern>/RequestDemo4</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RequestDemo5</servlet-name>
+    <url-pattern>/RequestDemo5</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ResponseDemo1</servlet-name>
+    <url-pattern>/ResponseDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResponseDemo2</servlet-name>
+    <url-pattern>/ResponseDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResponseDemo3</servlet-name>
+    <url-pattern>/ResponseDemo3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResponseDemo4</servlet-name>
+    <url-pattern>/ResponseDemo4</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

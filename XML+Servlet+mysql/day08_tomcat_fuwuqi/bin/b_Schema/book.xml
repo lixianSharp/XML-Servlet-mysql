@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 通过名称空间声明（xmlns），来声明当前编写的标签来自哪个Schema约束文档 -->
+<!-- schemaLocation此属性有两个值。
+			第一个值是需要使用的命名空间。
+			第二个值是供命名空间使用的 XML schema 的位置，两者之间用空格分隔。
+ -->
+<itcast:书架 xmlns:itcast="http://www.itcast.cn"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				xsi:schemaLocation="http://www.itcast.cn book.xsd">
+	<itcast:书>
+		<itcast:书名>JavaScript网页开发</itcast:书名>
+		<itcast:作者>张孝祥</itcast:作者>
+		<itcast:售价>28</itcast:售价>
+	</itcast:书>
+
+</itcast:书架>
+
+<!-- 有两个名称空间 -->
